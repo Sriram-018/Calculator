@@ -20,14 +20,14 @@ struct CalculatorView: View {
             VStack(spacing: 5){
                 HStack {
                     Spacer()
-                    Text(data.displayView())
+                    // ** is present to make the text bold.
+                    Text("**\(data.displayView())**")
                 }
                 .padding()
                 .frame(width: size * 4 + 20, height: size)
                 .background(.white)
                 .foregroundColor(.orange)
                 .font(.system(size: size * 0.5))
-                .bold()
                 .cornerRadius(10)
                 .contrast(0.85)
                 
